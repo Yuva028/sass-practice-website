@@ -1,0 +1,106 @@
+@use "../abstract/variable" as *;
+@use "../abstract/mixins" as mixins;
+
+
+
+.about{
+    display: flex;
+    background-color: navy;
+    margin-top: 90px;
+
+
+    //Mobile Responsive
+
+    @include mixins.responsive(xs){
+        margin-top: 40px;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    
+    &-box{
+        background-color: navy;
+        display: flex;
+
+
+
+
+        // Mobile Responsive
+
+        @include mixins.responsive(xs){
+            flex-direction: column;
+        }
+       
+
+
+
+     }
+     
+
+
+
+    &-learn{
+        background-color: navy;
+        color: mediumvioletred;
+        font-size: 2rem;
+
+
+
+
+        //Mobile Responsive
+
+        @include mixins.responsive(xs){
+            font-size: 1.2rem;
+            
+         }
+
+
+
+    }
+
+
+
+
+    &-image{
+        background-color: navy;
+        margin-top: 40px;
+        margin-left:10%;
+        width: 20%;
+        height: 80%;
+
+
+
+
+        //Mobile Responsive
+
+        @include mixins.responsive(xs){
+            margin-top: 20px;
+        }
+
+
+        
+
+    }
+
+
+
+    &-para{
+        background-color: navy;
+        color: white;
+        font-size:large;
+         margin-top: 110px;
+         margin-right: 50px;
+         line-height: 30px;
+
+
+
+         //Mobile Responsive
+
+         @include mixins.responsive(xs){
+            font-size: 0.8rem;
+            margin-top: 20px;
+            padding: 20px;
+            line-height: 20px;
+         }
+}       
+}

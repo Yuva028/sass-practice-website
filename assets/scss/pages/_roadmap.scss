@@ -1,0 +1,171 @@
+@use "../abstract/variable" as *;
+@use "../abstract/mixins" as mixins;
+
+
+
+.roadmap{
+    text-align: center;
+    margin-top: 140px;
+
+
+    
+
+    
+
+    //Mobile Responsive
+    @include mixins.responsive(xs){
+       margin-top: 50px;
+    }
+
+
+
+
+&--exp{
+    font-size: 2rem;
+
+
+
+    
+
+    //Mobile Responsive
+    @include mixins.responsive(xs){
+        font-size: 1.2rem;
+    }
+
+
+
+}
+&--para{
+    color: gray;
+    margin-top: 20px;
+    font-weight:bold;
+
+  
+
+    //Mobile Responsive
+
+    @include mixins.responsive(xs){
+        margin-top: 10px;
+    }
+
+}
+
+&--empty{
+    background-color: #000;
+    width:100px;
+    height: 6px;
+    border-radius: 5px;
+   margin-left: 615px;
+   margin-top: 20px;
+   background: linear-gradient(to right, rgb(240, 45, 77),navy);
+
+
+   
+
+    
+
+    //Mobile Responsive
+    @include mixins.responsive(xs){
+       margin-left: 150px;
+       width: 70px;
+    }
+
+
+
+}
+}
+
+
+
+.roadmap_align{
+    display: flex;
+   margin-left: 25%;
+   margin-top: 100px;
+   background-color: transparent;
+
+
+
+   
+
+    
+
+    //Mobile Responsive
+    @include mixins.responsive(xs){
+      display: none;
+    }
+
+
+
+
+}
+
+
+
+
+.roadmap--items {
+    img{
+   
+        width: auto;
+        height: 80px;
+        border-style: dotted;
+        border-radius: 50%;
+        border-color:rgb(5, 5, 182);
+        padding: 15px;
+        background-color: transparent;
+        filter: grayscale(100%);
+        animation: rotate-mode 1s linear infinite;
+
+
+&:hover  {
+    filter: grayscale(0);
+     transition: 400ms;
+    animation-duration:0ms;
+}
+    }
+ 
+
+&:not(:first-child)::before{
+    content: ">";
+    font-size: 4rem;
+    font-weight:bolder;
+    right: 30%;
+    position: relative;
+    bottom: 25%;
+    transition: 1s;
+
+
+    
+
+    //Mobile Responsive
+    @include mixins.responsive(xs){
+        display: none;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+&:last-child::after{
+    content: "😊👍";
+    left: 130%;
+    font-size: 3rem;
+    bottom: 60%;  
+    position: relative; 
+    visibility: hidden; 
+}
+}
+
+
+.roadmap--items:hover:last-child::after{
+    visibility: visible;
+}
+
+.roadmap--items:hover{
+    color:magenta;
+}

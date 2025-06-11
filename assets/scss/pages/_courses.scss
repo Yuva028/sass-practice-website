@@ -1,0 +1,289 @@
+@use "../abstract/variable" as *;
+@use "../abstract/mixins" as mixins;
+
+
+
+.course{
+     margin-top: 120px;
+
+     
+     // Mobile Responsive
+
+     @include mixins.responsive(xs){
+        margin-top: 50px;
+     }
+     
+&--box{
+    background-color: navy;
+    color: white;
+    text-align: center;
+    line-height:1.5;
+    padding: 20px;
+}
+&--free{
+    background-color: navy;
+    font-size: 1.8rem;
+
+
+
+
+    //Mobile Responsive
+    @include mixins.responsive(xs){
+        font-size: 1.1rem;
+    }
+
+
+
+
+}
+&--paragraph{
+    background-color: navy;
+    color: gray;
+    text-shadow: 5px 5px 5px  rgb(19, 16, 16);
+}
+}
+
+
+
+
+
+.course--list{
+   display: flex;
+   margin-top:110px ;
+
+
+   
+
+     //Mobile Responsive
+
+     @include mixins.responsive(xs){
+        flex-direction: column; 
+    }
+
+
+
+&_html img{
+    width: 50%;
+    height: 70%;
+    margin-left: 40% ;
+
+
+
+    //Mobile Responsive
+
+    @include mixins.responsive(xs){
+        margin-left:90px;
+
+    }
+
+
+
+
+}
+&_css img{
+    width: 50%;
+    height: 70%;
+    margin-left: 25%;
+
+    
+    
+
+    //Mobile Responsive
+
+    @include mixins.responsive(xs){
+        margin-left:90px;
+        margin-top: 30px;
+    }
+
+
+
+}
+
+&_js img{
+    width: 50%;
+    height: 70%;
+    margin-left: 10%;
+
+    
+
+    //Mobile Responsive
+
+    @include mixins.responsive(xs){
+        margin-left:90px;
+        margin-top: 30px;
+    }
+
+
+
+    
+}
+
+
+
+
+&_type{
+    max-width: 250px;
+    margin-left: 40%;
+    line-height: 1.2;
+    font-size: 15px;
+    color: gray;
+
+    
+    
+    
+
+    //Mobile Responsive
+
+    @include mixins.responsive(xs){
+        margin-left:75px;
+    }
+
+
+
+    
+}
+
+&_type:hover{
+    color: blueviolet;
+}
+
+&_con{
+    max-width: 250px;
+    margin-left: 25%;
+    line-height: 1.2;
+    font-size: 15px;
+    color: gray;
+
+    
+    
+    
+    
+
+    //Mobile Responsive
+
+    @include mixins.responsive(xs){
+        margin-left:75px;
+    }
+
+
+
+}
+
+&_con:hover{
+    color: blueviolet;
+}
+
+&_letter{
+    max-width: 250px;
+    margin-left: 10%;
+    line-height: 1.2;
+    font-size: 15px;
+    color: gray;
+
+    
+    
+    
+    
+
+    //Mobile Responsive
+
+    @include mixins.responsive(xs){
+        margin-left:75px;
+    }
+
+
+
+}
+
+&_letter:hover{
+    color: blueviolet;
+}
+
+
+
+
+&_hyper{
+    margin-left: 36%;
+    padding: 20px;
+
+    
+
+    //Mobile Responsive
+
+    @include mixins.responsive(xs){
+        margin-left:60px;
+    }
+
+
+
+    
+   }
+
+&_style{
+    margin-left: 24%;
+    padding: 20px;
+
+    
+    
+
+    //Mobile Responsive
+
+    @include mixins.responsive(xs){
+        margin-left:65px;
+    }
+
+
+
+    
+}
+
+&_script{
+    padding: 20px;
+    margin-left: 15%;
+
+    
+    
+    
+
+    //Mobile Responsive
+
+    @include mixins.responsive(xs){
+        margin-left:100px;
+    }
+
+
+
+    
+}
+
+}
+
+
+
+
+.more-link{
+    background-color: navy;
+    margin-top: 10%;
+    position: absolute;
+    width: 98%;
+    margin-left: 15px;
+    height: 5%;
+    border-radius: 20px;
+
+
+    
+
+     //Mobile Responsive
+
+     @include mixins.responsive(xs){
+        display: none;
+     }
+
+}
+.more a{
+   text-decoration: none;
+   color: gray;
+   text-align: center;
+   padding-top: 10px;
+   text-shadow: 2px 2px 2px black;
+}

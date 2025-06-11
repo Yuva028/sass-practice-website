@@ -1,0 +1,194 @@
+@use "../abstract/variable" as *;
+@use "../abstract/mixins" as mixins;
+
+
+
+
+.home{
+    display: flex;
+    align-items: center;
+    margin-right: 200px;
+
+
+    // Mobile Responsive
+
+    @include mixins.responsive(xs){
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+
+&_first{
+    margin-left: 250px;
+    margin-top: 10%;
+
+
+
+    
+
+
+
+    
+     // Mobile Responsive
+
+     @include mixins.responsive(xs){
+        margin-left: 90px;
+     }
+
+
+
+
+     
+
+}
+
+&--h{
+    font-size: 2rem;
+   
+
+
+
+    
+     // Mobile Responsive
+
+     @include mixins.responsive(xs){
+        font-size: 1.2rem;
+        margin-top: 50px;
+       
+     }
+
+
+
+
+     
+}
+
+
+
+&-word{
+
+    margin-top: 15px;
+    line-height: 20px;
+
+    
+
+
+
+    
+     // Mobile Responsive
+
+     @include mixins.responsive(xs){
+        font-size: 0.7rem;
+        line-height: 15px;
+        
+     }
+
+
+
+
+     
+
+}
+
+
+
+&_second{
+    margin-top: 10%;
+
+
+     // Mobile Responsive
+
+     @include mixins.responsive(xs){
+        display: none;
+        
+    }
+
+
+}
+
+
+
+&_free{
+     background-color: navy;
+    color: white;
+    padding: 9px;
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 5px;
+    border-style: none;
+
+
+
+
+    
+     // Mobile Responsive
+
+     @include mixins.responsive(xs){
+        font-size: 0.6rem;
+       
+     }
+
+
+
+
+     
+}
+&_free:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+}
+&_more{
+    color:navy;
+    padding: 8px;
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: navy;
+    margin-left: 20px;
+
+
+
+    
+     // Mobile Responsive
+
+     @include mixins.responsive(xs){
+        font-size: 0.6rem;
+        margin-left: 0;
+        margin-top: 10px;
+       
+     }
+
+
+
+
+
+}
+
+
+&_more:hover{
+    background-color: $hover;
+    cursor: pointer;
+}
+
+&--print{
+    @extend.header--sass;
+    background-color:wheat;
+}
+}
+
+//  Video Icon
+
+.fa-video{
+   background-color: navy;
+   color: white;
+   margin-right: 10px;
+}
+
+// Heart Icon
+
+.fa-heart{
+    color: red;
+    background-color: transparent;
+}
+

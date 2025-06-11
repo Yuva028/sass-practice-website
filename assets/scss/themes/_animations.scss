@@ -1,0 +1,38 @@
+//SASS Animation
+
+@keyframes color-anii {
+    0% {
+        color: red;
+    }
+
+    50%{
+        color: rgb(8, 207, 35);
+    }
+
+    100%{
+        color:  rgb(207, 8, 124);
+    }
+}
+
+// Background-images
+
+@keyframes box-bg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+// Roadmap Animations
+
+@keyframes rotate-mode  {
+    0%{
+        transform: rotate(0deg);
+    }   
+    100%{
+        transform: rotate(360deg);
+    }
+}

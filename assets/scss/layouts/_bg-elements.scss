@@ -1,0 +1,167 @@
+@use "../abstract/variable" as *;
+@use "../abstract/mixins" as mixins;
+
+
+// Home Background Animations
+
+.home_animations{
+
+
+  
+
+  //Mobile Responsive
+
+  @include mixins.responsive(xs){
+    display: none;
+  }
+
+
+
+    .box-1{
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: transparent;
+        top: 15%;
+        left: 10%;
+        border-radius: 0.35rem;
+        border: 3px solid navy;
+        z-index: 1;
+        transform: rotate(360deg);
+        animation: box-bg linear 5s infinite;
+    }
+
+  .box-2{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    top: 60%;
+    left: 45%;
+    border-radius: 0.35rem;
+    border: 3px solid navy;
+    z-index: 1;
+    transform: rotate(360deg);
+    animation: box-bg linear 5s infinite;
+  }
+
+  .box-3{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+    top: 60%;
+    right: 4%;
+    border-radius: 0.35rem;
+    border: 3px solid navy;
+    z-index: 1;
+    transform: rotate(360deg);
+    animation: box-bg linear 5s infinite;
+  }
+
+  .dot-1{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(175, 16, 5);
+    top: 20%;
+    right: 6%;
+    border-radius:50%;
+    z-index: 1;
+    transform: rotate(360deg);
+    animation: box-bg linear 5s infinite;
+  }
+
+  .dot-2{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(6, 127, 175);
+    top: 40%;
+    left: 6%;
+    border-radius:50%;
+    z-index: 1;
+    transform: rotate(360deg);
+    animation: box-bg linear 5s infinite;
+  }
+
+  .dot-3{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(175, 5, 124);
+    top: 70%;
+    left: 30%;
+    border-radius:50%;
+    z-index: 1;
+    transform: rotate(360deg);
+    animation: box-bg linear 5s infinite;
+  }
+
+  .dot-4{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #000;
+    top: 75%;
+    right: 40%;
+    border-radius:50%;
+    z-index: 1;
+    transform: rotate(360deg);
+    animation: box-bg linear 5s infinite;
+  }
+
+  .heart-1{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #f70909;
+    top: 60%;
+    left: 10%;
+    border-radius:50%;
+    z-index: 1;
+    transform: rotate(360deg);
+    animation: box-bg linear 5s infinite;
+  }
+
+  .heart-2{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #f70909;
+    top: 40%;
+    right: 15%;
+    border-radius:50%;
+    z-index: 1;
+    transform: rotate(360deg);
+    animation: box-bg linear 5s infinite;
+  }
+
+  .heart-3{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #f70909;
+    top:70%;
+    right: 20%;
+    border-radius:50%;
+    z-index: 1;
+    transform: rotate(360deg);
+    animation: box-bg linear 5s infinite;
+  }
+
+  .heart-4{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #f70909;
+    top: 20%;
+    right: 50%;
+    border-radius:50%;
+    z-index: 1;
+    transform: rotate(360deg);
+    animation: box-bg linear 5s infinite;
+  }
+
+}
+

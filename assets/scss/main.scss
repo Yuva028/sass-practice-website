@@ -1,0 +1,33 @@
+// Abstract
+
+@use "./abstract/variable" as *;
+@use "./abstract/mixins" as mixins;
+
+
+// Base
+
+@import "./base/global";
+@import "./base/reset";
+
+// Components
+
+@import "./components/button";
+
+// Layouts
+
+@import "./layouts/header";
+@import "./layouts/bg-elements";
+
+//Pages
+
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/roadmap";
+@import "./pages/courses";
+@import "./pages/footer";
+
+
+// Themes
+
+@import "./themes/animations";
+
