@@ -14,4 +14,3 @@ A responsive and modern website built using HTML, CSS, and Sass (Syntactically A
 - HTML5
 - CSS3
 - Sass (SCSS)
-- [Optional: JavaScript if used]
